@@ -57,9 +57,6 @@ app.post("/payments/applepay/tokens", async (req, res) => {
 
   try {
 
-
-    // start timer 
-    const start = new Date().getTime();
     const response = await axios.post(
       'https://api.dibsy.one/v2/payments',
       opts,
@@ -74,10 +71,6 @@ app.post("/payments/applepay/tokens", async (req, res) => {
     console.log('response', response.data)
 
     if (response?.data?.status === "succeeded") {
-      // calculate time taken
-      const end = new Date().getTime();
-      const time = end - start;
-      console.log('time', time)
       res.sendStatus(200)
     }
     else {
