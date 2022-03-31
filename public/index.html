@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Example - Apple Pay</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://cdn.dibsy.one/landing/favicon/favicon.ico"
+		/>
+		<script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+	</head>
+
+	<body>
+		<form class="checkout">
+			<div class="checkout-header">
+			  <h1 class="checkout-title">
+				Checkout
+				<span class="checkout-price">$10</span>
+			  </h1>
+			</div>
+			<p>
+				
+				<apple-pay-button buttonstyle="black" type="plain" locale="en"></apple-pay-button>
+			</p>
+		  </form>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
