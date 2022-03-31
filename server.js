@@ -22,7 +22,7 @@ app.post("/payments/applepay/session", async (req, res) => {
       JSON.stringify(options),
       {
         headers: {
-          'Authorization': 'Bearer sk_live_a4b69994f53bb422124198991d8501eeb38b',
+          'Authorization': 'Bearer sk_live_',
           "Content-Type": "application/json",
         }
       }
@@ -65,7 +65,7 @@ app.post("/payments/applepay/tokens", async (req, res) => {
       opts,
       {
         headers: {
-          'Authorization': 'Bearer sk_live_a4b69994f53bb422124198991d8501eeb38b',
+          'Authorization': 'Bearer sk_live_',
           "Content-Type": "application/json",
         }
       }
